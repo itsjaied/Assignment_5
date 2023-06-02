@@ -310,6 +310,11 @@ a {
   color: white;
 }
 
+.card:hover .icon {
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
 /* boxes part end here */
 
 /* here is the common style for the banners */
