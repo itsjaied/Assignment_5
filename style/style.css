@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* here is the header part start */
+
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px;
+  padding: 10px;
+}
+
+.nav li {
+  display: inline;
+  padding: 10px;
+}
+
+/* Hover design for navigation menu*/
+
+.navbtn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #91a3bb;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: relative;
+  transition-property: color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbtn:hover,
+.navbtn:focus {
+  color: #171f3c;
+}
+
+.navbtn:focus::after,
+.navbtn:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+.navbtn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition-property: width left;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.btn a {
+  background-color: #2e367d;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+}
+
+.btn a:hover {
+  background-color: #007bff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* Here the header part end */
+
+/* here is the banner1 part start */
+
+.banner1 {
+  padding: 110px 0 0 0;
+}
+
+.inner-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0 45px;
+}
+
+.banner-text {
+  flex-basis: 50%;
+}
+
+.banner-img {
+  flex-basis: 50%;
+}
+
+.banner-img img {
+  max-width: 100%;
+}
+
+/* specific style for 5th banner img*/
+.banner5 .banner-img img {
+  width: 90%;
+}
+
+.banner-text h2 {
+  color: #1e266d;
+  font-size: 45px;
+  margin: 0 0 20px;
+}
+
+/* spacific style for 1st banner para */
+.banner1 .banner-text p {
+  color: #1e266d;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.banner-text p {
+  color: #526375;
+  font-size: 16px;
+  margin: 0 0 30px;
+  line-height: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+
+.inner-banner a {
+  display: inline-block;
+  padding: 13px 30px;
+  font-size: 16px;
+  background-color: #1e266d;
+  color: #fff;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.inner-banner a:hover {
+  background-color: #007bff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* here is the banner1 part end */
+
+/* here is the boxes part start */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 150px 0 45px;
+}
+
+.card {
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 32%;
+  text-decoration: none;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 20px 15px 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+.card1 {
+  color: #f9799a;
+}
+.card2 {
+  color: #61c4d8;
+}
+.card3 {
+  color: #1e266d;
+}
+
+.card .icon {
+  padding: 0 16px 0 0;
+  font-size: 30px;
+}
+
+.card .para h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card .para p {
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 1.9;
+  margin: 0 0 16px;
+}
+
+.card .go-corner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 0 8px 0 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.card1 .go-corner {
+  background-color: #f9799a;
+}
+
+.card2 .go-corner {
+  background-color: #61c4d8;
+}
+
+.card3 .go-corner {
+  background-color: #1e266d;
+}
+
+.card .go-corner {
+  margin-right: -3px;
+  margin-top: -3px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: -1;
+  transform: scale(1);
+  transition: transform 0.23s ease-out;
+}
+
+.card1::after {
+  background-color: #f9799a;
+}
+
+.card2::after {
+  background-color: #61c4d8;
+}
+
+.card3::after {
+  background-color: #1e266d;
+}
+
+.card:hover::after {
+  transform: scale(25);
+}
+
+.card:hover p {
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
+.card:hover h3 {
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
+/* boxes part end here */
+
+/* here is the common style for the banners */
+.inner-banner .subtitle {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #171f3c;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.banner3,
+.banner5 {
+  background-color: #f5f7fa;
+}
+
+/* here the complex part start */
+
+.complex {
+  padding: 80px 0;
+}
+
+.inner-complex h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #07324f;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.bigimg2,
+.bigimg3,
+.bigimg4 {
+  display: none;
+}
+
+.hover-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 10px;
+  flex-basis: 300px;
+}
+
+.hover1 {
+  border-top: 5px solid #01aeef;
+}
+
+.hover2 {
+  border-top: 5px solid #e94524;
+}
+
+.hover3 {
+  border-top: 5px solid #f9ac1a;
+}
+
+.hover4 {
+  border-top: 5px solid #2d9470;
+}
+
+.hover i {
+  display: block;
+  margin: 0 0 25px;
+  font-size: 35px;
+}
+
+.hover strong {
+  margin: 0 0 5px;
+  font-weight: bolder;
+}
+
+.hover p {
+  margin: 0 0 16px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.hover1:hover {
+  color: #01aeef;
+}
+
+.hover1:hover .bigimg2 {
+  visibility: visible;
+  z-index: 1;
+}
+
+.hover2:hover {
+  color: #e94524;
+}
+
+.hover3:hover {
+  color: #f9ac1a;
+}
+
+.hover4:hover {
+  color: #2d9470;
+}
+
+/* address section styles start here */
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e367d;
+  color: white;
+  border-radius: 8px;
+  padding: 80px 60px;
+  margin: 50px 0;
+}
+
+.address h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.address p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0 0 16px;
+}
+
+/* here the contact section style goes */
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact1,
+.contact2,
+.contact3,
+.contact4 {
+  flex-basis: 300px;
+  padding: 15px;
+}
+
+.contact h5 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #1e266d;
+}
+
+.contact p,
+.contact a {
+  line-height: 1.7;
+  margin: 0 0 16px;
+  color: #91a3bb;
+}
+
+.contact3 li a,
+.contact4 li a {
+  padding: 0 0 0 0;
+  color: #91a3bb;
+  transition-property: padding color;
+  transition-duration: 0.5s;
+}
+
+.contact3 li a:hover,
+.contact4 li a:hover {
+  color: #1e266d;
+  padding: 0 0 0 5px;
+}
+
+/* payment section */
+
+.payment {
+  padding: 10px 0 0;
+}
+.payment img {
+  max-width: 100%;
+}
+
+/* footer section */
+
+.footer {
+  text-align: center;
+  color: #91a3bb;
+  padding: 30px 0 10px;
+}
+/* The End */
