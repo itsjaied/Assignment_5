@@ -54,6 +54,18 @@ a {
   padding: 10px;
 }
 
+/* for red dot above live option of navbar */
+.nav .live::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: -2px;
+  background-color: red;
+  border-radius: 6px;
+}
+
 /* Hover design for navigation menu*/
 
 .navbtn {
@@ -74,13 +86,13 @@ a {
   color: #171f3c;
 }
 
-.navbtn:focus::after,
-.navbtn:hover::after {
+.navbtn:focus::before,
+.navbtn:hover::before {
   width: 100%;
   left: 0%;
 }
 
-.navbtn::after {
+.navbtn::before {
   content: '';
   position: absolute;
   left: 50%;
